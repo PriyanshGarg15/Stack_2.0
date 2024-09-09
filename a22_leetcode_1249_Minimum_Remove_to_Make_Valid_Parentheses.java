@@ -2,7 +2,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.Stack;
 
-public class a14_leetcode_1249_Minimum_Remove_to_Make_Valid_Parentheses {
+public class a22_leetcode_1249_Minimum_Remove_to_Make_Valid_Parentheses {
     public String minRemoveToMakeValid(String s) {
         Set<Integer> indexesToRemove = new HashSet<>();
         Stack<Integer> stack = new Stack<>();
@@ -36,7 +36,7 @@ public class a14_leetcode_1249_Minimum_Remove_to_Make_Valid_Parentheses {
     }
 
     public static void main(String[] args) {
-        a14_leetcode_1249_Minimum_Remove_to_Make_Valid_Parentheses solution = new a14_leetcode_1249_Minimum_Remove_to_Make_Valid_Parentheses();
+        a22_leetcode_1249_Minimum_Remove_to_Make_Valid_Parentheses solution = new a22_leetcode_1249_Minimum_Remove_to_Make_Valid_Parentheses();
         String s = "lee(t(c)o)de)";
         System.out.println(solution.minRemoveToMakeValid(s)); // Output: "lee(t(c)o)de"
 

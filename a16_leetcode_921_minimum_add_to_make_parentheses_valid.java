@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.*;
 
-public class a10_leetcode_921_minimum_add_to_make_parentheses_valid 
+public class a16_leetcode_921_minimum_add_to_make_parentheses_valid 
 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);

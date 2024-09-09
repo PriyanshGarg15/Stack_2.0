@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class a9_leetcode_946_validate_stack_sequences {
+public class a21_leetcode_946_validate_stack_sequences {
 
     public static void main(String[] args) {
         int[] pushed1 = {1, 2, 3, 4, 5};

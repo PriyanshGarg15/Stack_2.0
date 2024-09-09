@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Stack;
 
-public class a16_leetcode_2375_Construct_Smallest_Number_From_DI_String {
+public class a12_leetcode_2375_Construct_Smallest_Number_From_DI_String {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.next(); //"IIIDIDDD"

@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class a13_leetcode_1190_reverse_substrings_between_each_pair_of_parentheses {
+public class a20_leetcode_1190_reverse_substrings_between_each_pair_of_parentheses {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();

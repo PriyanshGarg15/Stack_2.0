@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class a3_leetcode_496_next_greater_element_1 {
+public class a2_leetcode_496_next_greater_element_1 {
     public static void main(String[] args) {
         // Test case
         int[] nums1 = {4, 1, 2};

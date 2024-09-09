@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class a12_leetcode_856_score_of_parentheses {
+public class a19_leetcode_856_score_of_parentheses {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();

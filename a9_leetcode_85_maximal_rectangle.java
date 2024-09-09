@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class a8_leetcode_85_maximal_rectangle {
+public class a9_leetcode_85_maximal_rectangle {
 
     public static void main(String[] args) {
         char[][] matrix = {
@@ -25,16 +25,11 @@ public class a8_leetcode_85_maximal_rectangle {
         for (int row = 0; row < matrix.length; row++) {
             // Update heights array based on current row
             for (int col = 0; col < matrix[0].length; col++) {
-                if (matrix[row][col] == '1') {
-                    heights[col]++;
-                } else {
-                    heights[col] = 0;
-                }
+                heights[col] = matrix[row][col] == '1' ? heights[col] + 1 : 0;
             }
 
             // Calculate maximal rectangle area for current row as histogram
-            int rowMaxArea = largestRectangleArea(heights);
-            maxArea = Math.max(maxArea, rowMaxArea);
+            maxArea = Math.max(maxArea, largestRectangleArea(heights));
         }
 
         return maxArea;
@@ -42,19 +37,15 @@ public class a8_leetcode_85_maximal_rectangle {
 
     public static int largestRectangleArea(int[] heights) {
         Stack<Integer> st = new Stack<>();
-        int[] nextsmallest_right = new int[heights.length];
-        int[] nextsmallest_left = new int[heights.length];
+        int[] nextSmallestRight = new int[heights.length];
+        int[] nextSmallestLeft = new int[heights.length];
 
         // Next smaller on right
         for (int i = heights.length - 1; i >= 0; i--) {
             while (!st.isEmpty() && heights[st.peek()] >= heights[i]) {
                 st.pop();
             }
-            if (st.isEmpty()) {
-                nextsmallest_right[i] = heights.length;
-            } else {
-                nextsmallest_right[i] = st.peek();
-            }
+            nextSmallestRight[i] = st.isEmpty() ? heights.length : st.peek();
             st.push(i);
         }
 
@@ -66,20 +57,15 @@ public class a8_leetcode_85_maximal_rectangle {
             while (!st.isEmpty() && heights[st.peek()] >= heights[i]) {
                 st.pop();
             }
-            if (st.isEmpty()) {
-                nextsmallest_left[i] = -1;
-            } else {
-                nextsmallest_left[i] = st.peek();
-            }
+            nextSmallestLeft[i] = st.isEmpty() ? -1 : st.peek();
             st.push(i);
         }
 
         // Calculate maximum area
         int maxArea = 0;
         for (int i = 0; i < heights.length; i++) {
-            int width = nextsmallest_right[i] - nextsmallest_left[i] - 1;
-            int area = heights[i] * width;
-            maxArea = Math.max(maxArea, area);
+            int width = nextSmallestRight[i] - nextSmallestLeft[i] - 1;
+            maxArea = Math.max(maxArea, heights[i] * width);
         }
         return maxArea;
     }

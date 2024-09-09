@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class a11_leetcode_1021_remove_outermost_parentheses 
+public class a18_leetcode_1021_remove_outermost_parentheses 
 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);

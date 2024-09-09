@@ -1,6 +1,5 @@
-import java.util.Stack;
-
-public class a7_leetcode_84_largest_reactangle_in_histogram {
+import java.util.*;
+public class a8_leetcode_84_largest_reactangle_in_histogram {
     public static void main(String[] args) {
         int[] heights = {2, 1, 5, 6, 2, 3};
         int max = largestRectangleArea(heights);
@@ -17,11 +16,7 @@ public class a7_leetcode_84_largest_reactangle_in_histogram {
             while (!st.isEmpty() && heights[st.peek()] >= heights[i]) {
                 st.pop();
             }
-            if (st.isEmpty()) {
-                nextsmallest_right[i] = heights.length;
-            } else {
-                nextsmallest_right[i] = st.peek();
-            }
+            nextsmallest_right[i] = st.isEmpty() ? heights.length : st.peek();
             st.push(i);
         }
 
@@ -33,11 +28,7 @@ public class a7_leetcode_84_largest_reactangle_in_histogram {
             while (!st.isEmpty() && heights[st.peek()] >= heights[i]) {
                 st.pop();
             }
-            if (st.isEmpty()) {
-                nextsmallest_left[i] = -1;
-            } else {
-                nextsmallest_left[i] = st.peek();
-            }
+            nextsmallest_left[i] = st.isEmpty() ? -1 : st.peek();
             st.push(i);
         }
 

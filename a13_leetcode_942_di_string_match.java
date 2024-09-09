@@ -1,4 +1,4 @@
-public class a17_leetcode_942_di_string_match {
+public class a13_leetcode_942_di_string_match {
     public int[] diStringMatch(String s) {
         int n = s.length();
         int[] perm = new int[n + 1];

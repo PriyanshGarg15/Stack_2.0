@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class a18_leetcode_277_premium_celebrity_problem {
+public class a14_leetcode_277_premium_celebrity_problem {
 
 	public static void main(String[] args) {
 		int[][] arr = { { 0, 1, 1, 1 }, { 1, 0, 1, 1 }, { 0, 0, 0, 0 }, { 1, 1, 1, 0 } };
