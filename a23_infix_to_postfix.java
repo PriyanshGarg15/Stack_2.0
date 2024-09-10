@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class a23_infix_to_postfic_conversion {
+public class a23_infix_to_postfix {
 
     // Returns the precedence of the given operator
     private static int getPrecedence(char op) {
