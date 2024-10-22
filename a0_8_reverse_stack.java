@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class a8_reverse_stack {
+public class a0_8_reverse_stack {
     public static void main(String[] args) {
         Stack<Integer> st = new Stack<>();
         st.push(10);

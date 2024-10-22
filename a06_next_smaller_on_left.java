@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class a6_next_smaller_on_left {
+public class a06_next_smaller_on_left {
     public static void main(String[] args) {
         int[] arr = {5, 3, 2, 4, 6, 11, 9, 6};
         int[] result = nextSmallerElement(arr);

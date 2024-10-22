@@ -1,5 +1,5 @@
 import java.util.Stack;
-public class a1_next_greater_to_right {
+public class a01_next_greater_to_right {
 	public static void main(String[] args) {
 		int[] arr = { 5, 3, 2, 4, 6, 11, 9, 6 };
 		int[] ans=NGE(arr);

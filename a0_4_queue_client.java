@@ -1,10 +1,10 @@
 import java.util.Queue;
 
-public class a4_queue_client 
+public class a0_4_queue_client 
 {
     public static void main(String[] args) 
     {
-        a3_queue_implementation.Queue q = new a3_queue_implementation.Queue(5);
+        a0_3_queue_implementation.Queue q = new a0_3_queue_implementation.Queue(5);
         q.enqueue(10);
         q.enqueue(20);
         q.enqueue(30);

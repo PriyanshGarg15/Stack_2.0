@@ -1,5 +1,5 @@
 import java.util.*;
-public class a5_next_greater_on_left {
+public class a05_next_greater_on_left {
     public static void main(String[] args) {
         int[] arr = {5, 3, 2, 4, 6, 11, 9, 6};
         int[] result = nextGreaterElementOnLeft(arr);

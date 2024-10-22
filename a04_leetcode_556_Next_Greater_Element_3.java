@@ -1,5 +1,5 @@
 import java.util.*;
-public class a4_leetcode_556_Next_Greater_Element_3 {
+public class a04_leetcode_556_Next_Greater_Element_3 {
     public int nextGreaterElement(int n) {
         List<Integer> nm=new ArrayList<>();
         String k=String.valueOf(n);
@@ -51,7 +51,7 @@ public class a4_leetcode_556_Next_Greater_Element_3 {
         }
     }
     public static void main(String[] args) {
-        a4_leetcode_556_Next_Greater_Element_3 sol = new a4_leetcode_556_Next_Greater_Element_3();
+        a04_leetcode_556_Next_Greater_Element_3 sol = new a04_leetcode_556_Next_Greater_Element_3();
         int n = 1234;  
         int result = sol.nextGreaterElement(n);
         System.out.println("Next greater element: " + result);

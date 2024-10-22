@@ -1,6 +1,6 @@
-public class a6_circular_way_client {
+public class a0_6_circular_way_client {
     public static void main(String[] args) {
-        a5_circular_way.Queue q = new a5_circular_way.Queue(5);
+        a0_5_circular_way.Queue q = new a0_5_circular_way.Queue(5);
 
         q.enqueue(10);
         q.enqueue(20);

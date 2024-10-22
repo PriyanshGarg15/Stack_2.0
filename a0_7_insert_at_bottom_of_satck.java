@@ -1,7 +1,7 @@
 //do without using extra st !!
 import java.util.Stack;
 
-public class a7_insert_at_bottom_of_satck {
+public class a0_7_insert_at_bottom_of_satck {
     public static void main(String[] args) {
         Stack<Integer> st = new Stack<>();
         st.push(10);

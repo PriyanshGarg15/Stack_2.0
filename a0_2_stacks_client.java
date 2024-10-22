@@ -1,6 +1,6 @@
-public class a2_stacks_client {
+public class a0_2_stacks_client {
     public static void main(String[] args) throws Exception {
-        a1_stacks_implementation.Stack s = new a1_stacks_implementation.Stack();
+        a0_1_stacks_implementation.Stack s = new a0_1_stacks_implementation.Stack();
         s.push(1);
         s.push(2);
         s.push(3);

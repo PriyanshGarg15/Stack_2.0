@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class a3_leetcode_503_next_grater_element_2 {
+public class a03_leetcode_503_next_grater_element_2 {
 
     public static class Solution {
         public int[] nextGreaterElements(int[] nums) {

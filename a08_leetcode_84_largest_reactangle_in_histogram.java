@@ -1,5 +1,5 @@
 import java.util.*;
-public class a8_leetcode_84_largest_reactangle_in_histogram {
+public class a08_leetcode_84_largest_reactangle_in_histogram {
     public static void main(String[] args) {
         int[] heights = {2, 1, 5, 6, 2, 3};
         int max = largestRectangleArea(heights);

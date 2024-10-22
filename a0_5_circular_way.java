@@ -1,4 +1,4 @@
-public class a5_circular_way 
+public class a0_5_circular_way 
 {
     public static class Queue
     {

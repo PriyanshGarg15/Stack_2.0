@@ -3,7 +3,7 @@ import java.util.Stack;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class a9_using_queue {
+public class a0_9_using_queue {
     public static void reverse(Stack<Integer> stack) {
         Queue<Integer> queue = new LinkedList<>();
         while (!stack.isEmpty()) {

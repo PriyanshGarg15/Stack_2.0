@@ -11,7 +11,7 @@
 //isempty
 //isfull
 
-public class a1_stacks_implementation 
+public class a0_1_stacks_implementation 
 {
 
     public static class Stack 

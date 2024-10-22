@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class a9_leetcode_85_maximal_rectangle {
+public class a09_leetcode_85_maximal_rectangle {
 
     public static void main(String[] args) {
         char[][] matrix = {
